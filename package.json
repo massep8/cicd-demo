@@ -1,0 +1,15 @@
+{
+  "name": "jenkins_ci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "gitlab.hpintelco.org/pap/jenkins_ci"
+  },
+  "author": "pierre-antoine.porte@hpe.com",
+  "license": "ISC"
+}
