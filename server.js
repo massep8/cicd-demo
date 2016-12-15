@@ -1,17 +1,21 @@
 'use strict';
 
 const express = require('express');
+const path    = require('path');
 const Q       = require('q');
 var app       = express();
 var server    = require('http').createServer(app);
 
 app.set('port', process.env.PORT || process.env.$PORT0 || process.env.PORT0 || 8080);
 
+
+// view engine setup
+app.set('views', path.join(__dirname));
+/*app.engine('jade', require('jade'));
+*/app.set('view engine', 'jade');
+
 app.get('/', function(req, res, next) {
-  res.status(200).send({
-    "healthy": true,
-    code: 200
-  });
+  res.render('index.jade', {PORT : app.get('port')});
 });
 
 

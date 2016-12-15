@@ -1,5 +1,5 @@
 "use strict";
- 
+
 const chai          = require('chai');
 const assert        = chai.assert;
 const chaiHttp      = require('chai-http');
@@ -33,8 +33,6 @@ describe('testing GET HTTP /', function() {
     .end(function (err, res) {
       assert.isNull(err);
       assert.equal(res.status, 200);
-      assert.isObject(res.body);
-      assert.deepEqual(res.body, {"healthy": true, "code": 200});
       done();
     });
   });

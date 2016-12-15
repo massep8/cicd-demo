@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+  head
+    title Mesos
+    style.
+      .btn-hpe {
+        color:white;
+        background-color: #09B38C;
+        font-weight: bold !important;
+        margin-left:45%;
+      }
+      #port, #seen {
+        font-weight:bold;
+      }
+      .container {
+        margin-top: 18%;
+      }
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js", crossorigin="anonymous")
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS", crossorigin="anonymous")
+  
+  body.container
+    h1.text-center
+      | Website of Mesos/Marathon demo
+    div
+      span#port.btn.btn-hpe  PORT : !{PORT}
+    br
+    br
