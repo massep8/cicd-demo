@@ -14,7 +14,7 @@
       "portMappings": null,
       "privileged": false,
       "parameters": [],
-      "forcePullImage": false
+      "forcePullImage": true
     }
   },
   "healthChecks": [
